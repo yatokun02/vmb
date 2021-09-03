@@ -29,8 +29,8 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
-async def start_(client: Client, message: Message):
+@Client.on_message(command(["vcstart", f"vcstart@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
+async def vcstart_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>✨ **Welcome {message.from_user.first_name}** \n
 💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 !**
@@ -73,8 +73,8 @@ async def start_(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
-async def start(client: Client, message: Message):
+@Client.on_message(command(["vcstart", f"vcstart@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+async def vcstart(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
@@ -94,8 +94,8 @@ async def start(client: Client, message: Message):
         )
     )
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
-async def help(client: Client, message: Message):
+@Client.on_message(command(["vchelp", f"vchelp@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+async def vchelp(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
 
@@ -113,8 +113,8 @@ async def help(client: Client, message: Message):
         )
     )
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
-async def help_(client: Client, message: Message):
+@Client.on_message(command(["vchelp", f"vchelp@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
+async def vchelp_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>💡 Hello {message.from_user.mention} welcome to the help menu !</b>
 
