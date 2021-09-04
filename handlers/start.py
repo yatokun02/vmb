@@ -29,7 +29,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
+@Client.on_message(command(["vcstart", f"vcstart@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>✨ **Welcome {message.from_user.first_name}** \n
@@ -73,7 +73,7 @@ async def start_(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["vcstart", f"vcstart@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
@@ -94,7 +94,7 @@ async def start(client: Client, message: Message):
         )
     )
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["vchelp", f"vchelp@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
@@ -113,7 +113,7 @@ async def help(client: Client, message: Message):
         )
     )
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
+@Client.on_message(command(["vchelp", f"vchelp@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>💡 Hello {message.from_user.mention} welcome to the help menu !</b>
