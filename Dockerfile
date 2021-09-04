@@ -1,12 +1,26 @@
-FROM python:3.9.7-slim-buster
-RUN apt update && apt upgrade -y
-RUN apt install git curl python3-pip ffmpeg -y
+# bolo Debian Linux babaji ki jai 
+FROM debian:latest
+# bolo python3 image ki jai 
+FROM python:3.9.6-slim-buster
+
+# namo namo apt commands yatharth bhavahtu
+
+RUN sudo apt-get update 
+RUN sudo apt-get upgrade 
+
+RUN sudo apt install git curl python3-pip ffmpeg -y
+
+
 RUN pip3 install -U pip
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt-get install -y nodejs
-RUN npm install -g npm@7.22.0
-RUN mkdir /app/
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install -U -r requirements.txt
-CMD python3 main.py
+
+COPY . /app
+# bolo bhai sab santan ki jai 
+WORKDIR /app
+
+RUN chmod 777 /app
+
+RUN pip3 install --no-cache-dir -U -r requirements.txt
+
+# jai jai shree parvati patey uma pate Ambika patey har har mahadev 
+
+CMD python3 -m DaisyXMusic
