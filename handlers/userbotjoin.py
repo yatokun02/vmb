@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.filters import command
-from helpers.decorators import authorized_users_only, errors
+from helpers.decorators import sudo_users_only, errors
 from callsmusic.callsmusic import client as USER
 from config import BOT_USERNAME, SUDO_USERS
 
