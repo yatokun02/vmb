@@ -5,10 +5,10 @@ FROM python:3.9.6-slim-buster
 
 # namo namo apt commands yatharth bhavahtu
 
-RUN sudo apt-get update 
-RUN sudo apt-get upgrade 
+RUN apt-get update 
+RUN apt-get upgrade 
 
-RUN sudo apt install git curl python3-pip ffmpeg -y
+RUN apt install git curl python3-pip ffmpeg -y
 
 
 RUN pip3 install -U pip
