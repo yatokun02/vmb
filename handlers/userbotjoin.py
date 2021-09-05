@@ -8,7 +8,7 @@ from config import BOT_USERNAME, SUDO_USERS
 
 
 @Client.on_message(command(["userbotjoin", f"userbotjoin@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot)
-@authorized_users_only
+@sudo_users_only
 @errors
 async def addchannel(client, message):
     chid = message.chat.id
@@ -45,7 +45,7 @@ async def addchannel(client, message):
 
 
 @Client.on_message(command(["userbotleave", f"userbotleave@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
-@authorized_users_only
+@sudo_users_only
 async def rem(client, message):
     try:
         await USER.leave_chat(message.chat.id)
@@ -75,7 +75,7 @@ async def bye(client, message):
 
 
 @Client.on_message(command(["userbotjoinchannel", "ubjoinc"]) & ~filters.private & ~filters.bot)
-@authorized_users_only
+@sudo_users_only
 @errors
 async def addcchannel(client, message):
     try:
