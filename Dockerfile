@@ -10,6 +10,8 @@ RUN apt-get upgrade -y
 
 RUN apt install git curl python3-pip ffmpeg -y
 
+RUN su -c 'curl -sL https://deb.nodesource.com/setup_16.x | bash -'
+RUN su -c 'apt install -y nodejs'
 
 RUN pip3 install -U pip
 
