@@ -23,4 +23,4 @@ RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 # jai jai shree parvati patey uma pate Ambika patey har har mahadev 
 
-CMD python3 -m DaisyXMusic
+CMD python3 main.py
