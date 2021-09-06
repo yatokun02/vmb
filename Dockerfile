@@ -1,5 +1,3 @@
-# bolo Debian Linux babaji ki jai 
-FROM debian:latest
 # bolo python3 image ki jai 
 FROM python:3.9.6-slim-buster
 
@@ -11,12 +9,14 @@ RUN apt-get upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
 
 RUN su -c 'curl -sL https://deb.nodesource.com/setup_16.x | bash -'
-RUN su -c 'apt install -y nodejs'
+RUN su -c 'apt-get install -y nodejs'
 
 RUN pip3 install -U pip
 
 COPY . /app
+
 # bolo bhai sab santan ki jai 
+
 WORKDIR /app
 
 RUN chmod 777 /app
