@@ -10,15 +10,15 @@ else:
 load_dotenv()
 que = {}
 admins = {}
-SESSION_NAME = getenv("SESSION_NAME", "session")
-BOT_TOKEN = getenv("BOT_TOKEN")
-BOT_NAME = getenv("BOT_NAME", "Veez Music")
-BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/20147c4f049e2c1f2f248.png")
-THUMB_IMG = getenv("THUMB_IMG", "https://telegra.ph/file/6809135960af808e931b9.png")
-AUD_IMG = getenv("AUD_IMG", "https://telegra.ph/file/7ffd2c88f5275fc9058eb.png")
-QUE_IMG = getenv("QUE_IMG", "https://telegra.ph/file/1e01db4b4bde83842e8d7.png")
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+SESSION_NAME = 1AZWarzUBu8E7RAVIkeTiG_igMnAahxDVVFzeDjCV8p7VH8a-_G08RfQ1-7H9toqRG7e8F3bX_cZ3HdD9ZyYCxMajfO-sGdUsvz3nPTceMjV4g7uYlmqh35LGf_OlZxEYjPYpyGImjsi_vQa-NHGjqR_mN0uBkGq_epG5lrDWUcnbkjozuGXqCywDAcjpZ3HpmVizTE8gtg09BNd8vX77_plWq6AeHp4UGFQJ7oDnhh38h09Zl3DffT5GGI3TC4gmtSXVbKvcifcgF1ztubl7Xo7m_WeFvFQlx7idSbiO3NJ-dKEDijAfzbFsRIbz0cNCwsQsC8WCVO6V0Ae9rXeyuPwpdHMMr_s=
+BOT_TOKEN = 1628785224:AAFqfvW9Uia5nux-3G0S149fVMw6wA2ML3Q
+BOT_NAME = Emcee 
+BG_IMAGE = https://telegra.ph/file/f2e20442268dfeff8d405.png
+THUMB_IMG = https://telegra.ph/file/f2e20442268dfeff8d405.png
+AUD_IMG = https://telegra.ph/file/f2e20442268dfeff8d405.png
+QUE_IMG = https://telegra.ph/file/f2e20442268dfeff8d405.png
+API_ID = 
+API_HASH = 16e3ee37b54aa708e8250e270a531d89
 BOT_USERNAME = getenv("BOT_USERNAME", "veezmusicbot")
 ASSISTANT_NAME = getenv("ASSISTANT_NAME", "veezassistant")
 GROUP_SUPPORT = getenv("GROUP_SUPPORT", "VeezSupportGroup")
