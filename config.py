@@ -25,7 +25,7 @@ GROUP_SUPPORT = Emcee_Support
 UPDATES_CHANNEL = Emcee_Updates
 OWNER_NAME = Yato
 PMPERMIT = NONE
-OWNER_ID = 
+OWNER_ID = 1217888448
 DATABASE_URL = MONGO_DB_URI2 = mongodb+srv://abc:abc@cluster0.ye0s8.mongodb.net/test?retryWrites=true&w=majority
 LOG_CHANNEL = -1001581899215
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False)) # just fill with True or False (optional)
