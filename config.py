@@ -26,7 +26,8 @@ UPDATES_CHANNEL = Emcee_Updates
 OWNER_NAME = emcee_devs
 PMPERMIT = NONE
 OWNER_ID = 1217888448
-DATABASE_URL = MONGO_DB_URI2 = mongodb+srv://abc:abc@cluster0.ye0s8.mongodb.net/test?retryWrites=true&w=majority
+DATABASE_URL = mongodb+srv://abc:abc@cluster0.ye0s8.mongodb.net/test?retryWrites=true&w=majority
+MONGO_DB_URI2 = mongodb+srv://abc:abc@cluster0.ye0s8.mongodb.net/test?retryWrites=true&w=majority
 LOG_CHANNEL = -1001581899215
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False)) # just fill with True or False (optional)
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
