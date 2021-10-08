@@ -23,7 +23,7 @@ BOT_USERNAME = Emcee_bot
 ASSISTANT_NAME = EmceeVcPlayer
 GROUP_SUPPORT = Emcee_Support
 UPDATES_CHANNEL = Emcee_Updates
-OWNER_NAME = Yato
+OWNER_NAME = emcee_devs
 PMPERMIT = NONE
 OWNER_ID = 1217888448
 DATABASE_URL = MONGO_DB_URI2 = mongodb+srv://abc:abc@cluster0.ye0s8.mongodb.net/test?retryWrites=true&w=majority
